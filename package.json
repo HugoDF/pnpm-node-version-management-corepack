@@ -1,0 +1,21 @@
+{
+  "name": "pnpm-node-version-management-corepack",
+  "version": "1.0.0",
+  "description": "Using pnpm and corepack to manage both Node.js and pnpm versions.",
+  "main": "index.js",
+  "packageManager": "pnpm@7.29.1",
+  "scripts": {
+    "preinstall": "corepack enable",
+    "test": "node -v && pnpm -v",
+    "lint": "eslint . --ext js,json"
+  },
+  "author": "Hugo Di Francesco",
+  "dependencies": {
+    "eslint": "^8.36.0",
+    "jest": "^29.5.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-check-file": "^2.0.0",
+    "eslint-plugin-json": "^3.1.0"
+  }
+}
